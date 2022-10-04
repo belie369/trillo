@@ -154,6 +154,12 @@ body {
   color: var(--color-grey-light-4);
   text-align: center; }
 
+.gallery {
+  display: flex; }
+  .gallery__photo {
+    display: block;
+    width: 100%; }
+
 .container {
   margin: 8rem auto;
   max-width: 120rem;
@@ -183,4 +189,4 @@ body {
 .hotel-view {
   flex: 1;
   height: 80rem;
-  background-color: orangered; }
+  background-color: #fff; }

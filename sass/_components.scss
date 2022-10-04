@@ -181,3 +181,13 @@
 	color: var(--color-grey-light-4);
 	text-align: center;
 }
+
+////////////////////////////
+// GALLERY
+.gallery {
+	display: flex;
+	&__photo {
+		display: block;
+		width: 100%;
+	}
+}
