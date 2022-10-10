@@ -347,13 +347,6 @@
 	color: var(--color-grey-dark-3);
 	font-size: 1.3rem;
 
-	&__count {
-		// margin-right: auto;
-	}
-
-	&__friends {
-	}
-
 	&__photo {
 		box-sizing: content-box;
 		width: 4rem;
@@ -364,5 +357,67 @@
 		&:not(:last-child) {
 			margin-right: -1.15rem;
 		}
+	}
+}
+
+////////////////////////////
+// RECOMMEND
+.review {
+	position: relative;
+	margin-bottom: 3.5rem;
+	padding: 3rem;
+	background-color: #fff;
+	box-shadow: var(--shadow-light);
+	overflow: hidden;
+
+	&::before {
+		content: '\201C';
+		position: absolute;
+		top: -2.75rem;
+		left: -1rem;
+		color: var(--color-grey-light-2);
+		font-family: sans-serif;
+		font-size: 20rem;
+		line-height: 1;
+	}
+
+	&__text {
+		position: relative;
+		margin-bottom: 2rem;
+		z-index: 10;
+	}
+
+	&__user {
+		display: flex;
+		align-items: center;
+	}
+
+	&__photo {
+		margin-right: 1.5rem;
+		height: 4.5rem;
+		width: 4.5rem;
+		border-radius: 50%;
+	}
+
+	&__user-box {
+		margin-right: auto;
+	}
+
+	&__user-name {
+		margin-bottom: 0.4rem;
+		font-size: 1.1rem;
+		font-weight: 600;
+		text-transform: uppercase;
+	}
+
+	&__user-date {
+		color: var(--color-grey-dark-3);
+		font-size: 1rem;
+	}
+
+	&__rating {
+		color: var(--color-primary);
+		font-size: 2.2rem;
+		font-weight: 300;
 	}
 }
