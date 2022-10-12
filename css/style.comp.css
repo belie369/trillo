@@ -22,6 +22,11 @@
 
 html {
   font-size: 62.5%; }
+  @media only screen and (max-width: 68.75em) {
+    html {
+      font-size: 50%;
+      max-width: 100%;
+      width: 100%; } }
 
 body {
   min-height: 100vh;
@@ -116,6 +121,9 @@ body {
   margin-top: 3.5rem;
   font-size: 1.4rem;
   list-style: none; }
+  @media only screen and (max-width: 68.75em) {
+    .side-nav {
+      display: flex; } }
   .side-nav__item {
     position: relative; }
     .side-nav__item:not(:last-child) {
@@ -272,7 +280,7 @@ body {
     border: 3px solid #fff;
     border-radius: 50%; }
     .recommend__photo:not(:last-child) {
-      margin-right: -1.15rem; }
+      margin-right: -2rem; }
 
 .review {
   position: relative;
@@ -367,6 +375,9 @@ body {
   min-height: 50rem;
   background-color: var(--color-grey-light-1);
   box-shadow: var(--shadow-dark); }
+  @media only screen and (max-width: 75em) {
+    .container {
+      margin: 0; } }
 
 .header {
   display: flex;
@@ -379,6 +390,9 @@ body {
 
 .content {
   display: flex; }
+  @media only screen and (max-width: 56.25em) {
+    .content {
+      flex-direction: column; } }
 
 .sidebar {
   display: flex;

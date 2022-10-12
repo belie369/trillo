@@ -123,6 +123,10 @@
 	font-size: 1.4rem;
 	list-style: none;
 
+	@media only screen and (max-width: $bp-large) {
+		display: flex;
+	}
+
 	&__item {
 		position: relative;
 
@@ -364,7 +368,7 @@
 		border-radius: 50%;
 
 		&:not(:last-child) {
-			margin-right: -1.15rem;
+			margin-right: -2rem;
 		}
 	}
 }
