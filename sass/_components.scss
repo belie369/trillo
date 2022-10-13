@@ -123,8 +123,9 @@
 	font-size: 1.4rem;
 	list-style: none;
 
-	@media only screen and (max-width: $bp-large) {
+	@media only screen and (max-width: $bp-medium) {
 		display: flex;
+		margin: 0;
 	}
 
 	&__item {
@@ -132,6 +133,14 @@
 
 		&:not(:last-child) {
 			margin-bottom: 0.5rem;
+
+			@media only screen and (max-width: $bp-medium) {
+				margin: 0;
+			}
+		}
+
+		@media only screen and (max-width: $bp-medium) {
+			flex: 1;
 		}
 
 		&::before {
@@ -167,6 +176,11 @@
 		text-decoration: none;
 		text-transform: uppercase;
 		z-index: 10;
+
+		@media only screen and (max-width: $bp-medium) {
+			padding: 2rem;
+			justify-content: center;
+		}
 	}
 
 	&__icon {
@@ -184,6 +198,10 @@
 	font-size: 1.2em;
 	color: var(--color-grey-light-4);
 	text-align: center;
+
+	@media only screen and (max-width: $bp-medium) {
+		display: none;
+	}
 }
 
 ////////////////////////////
@@ -360,6 +378,11 @@
 	color: var(--color-grey-dark-3);
 	font-size: 1.3rem;
 
+	&__friends {
+		display: flex;
+		justify-content: center;
+	}
+
 	&__photo {
 		box-sizing: content-box;
 		width: 4rem;
@@ -382,6 +405,11 @@
 	background-color: #fff;
 	box-shadow: var(--shadow-light);
 	overflow: hidden;
+
+	@media only screen and (max-width: $bp-medium) {
+		padding: 2rem;
+		margin-bottom: 3rem;
+	}
 
 	&::before {
 		content: '\201C';
@@ -440,6 +468,10 @@
 .cta {
 	padding: 3.5rem 0;
 	text-align: center;
+
+	@media only screen and (max-width: $bp-medium) {
+		padding: 2.5rem 0;
+	}
 
 	&__book-now {
 		margin-bottom: 2.5rem;
