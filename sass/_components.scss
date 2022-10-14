@@ -181,6 +181,11 @@
 			padding: 2rem;
 			justify-content: center;
 		}
+
+		@media only screen and (max-width: $bp-small) {
+			padding: 1.5rem 0.5rem;
+			flex-direction: column;
+		}
 	}
 
 	&__icon {
@@ -188,6 +193,13 @@
 		width: 1.75rem;
 		height: 1.75rem;
 		fill: currentColor;
+
+		@media only screen and (max-width: $bp-small) {
+			margin-right: 0;
+			margin-bottom: 0.7rem;
+			width: 1.5rem;
+			height: 1.5rem;
+		}
 	}
 }
 
@@ -229,6 +241,11 @@
 		font-weight: 300;
 		text-transform: uppercase;
 		letter-spacing: 1px;
+
+		@media only screen and (max-width: $bp-small) {
+			padding: 1.25rem 2rem;
+			font-size: 1.8rem;
+		}
 	}
 
 	&__stars {
@@ -264,17 +281,29 @@
 		margin-left: 3rem;
 		color: #fff;
 		background-color: var(--color-primary);
+
+		@media only screen and (max-width: $bp-small) {
+			padding: 0 1.5rem;
+		}
 	}
 
 	&__rating-average {
 		margin-bottom: -3px;
 		font-size: 2.25rem;
 		font-weight: 300;
+
+		@media only screen and (max-width: $bp-small) {
+			font-size: 1.8rem;
+		}
 	}
 
 	&__rating-count {
 		font-size: 0.8rem;
 		text-transform: uppercase;
+
+		@media only screen and (max-width: $bp-small) {
+			font-size: 1.5rem;
+		}
 	}
 }
 
