@@ -304,10 +304,16 @@ body {
       display: inline-block;
       margin-right: 0.7rem;
       width: 1rem;
-      height: 1rem;
-      background-color: var(--color-primary);
-      mask-image: url("../img/chevron-thin-right.svg");
-      mask-size: cover; }
+      height: 1rem; }
+      @supports not (mask-image: url()) {
+        .list__item::before {
+          background-image: url("../img/chevron-thin-right.svg");
+          background-size: cover; } }
+      @supports (mask-image: url()) {
+        .list__item::before {
+          background-color: var(--color-primary);
+          mask-image: url("../img/chevron-thin-right.svg");
+          mask-size: cover; } }
 
 .recommend {
   display: flex;
